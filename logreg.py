@@ -18,10 +18,10 @@ y_tr_arr = y_train.as_matrix()
 y_ts_arr  = y_test.as_matrix()
 
 y_tr_arr = y_tr_arr[:,1:]
-def weightInitialization(n_features):
-    w = np.zeros((1,n_features))
-    b = 0
-    return w,b
+
+n_features = X_tr_arr.shape[1]
+w = np.zeros((1,n_features))
+b = 0
 def sigmoid_activation(result):
     final_result = 1/(1+np.exp(-result))
     return final_result
@@ -55,9 +55,7 @@ def predict(final_pred, m):
         if final_pred[0][i] > 0.5:
             y_pred[0][i] = 1
     return y_pred
-n_features = X_tr_arr.shape[1]
 print('Number of Features', n_features)
-w, b = weightInitialization(n_features)
 coeff, gradient, costs = model_predict(w, b, X_tr_arr, y_tr_arr, learning_rate=0.0001,no_iterations=4500)
 w = coeff["w"]
 b = coeff["b"]
