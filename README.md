@@ -10,3 +10,4 @@ The 'IRIS-VIRGINICA' class is removed.
 'IRIS-VERSICOLOR' has been labelled 2.
 
 The packages used are: Numpy,Scipy and a few modules from sklearn.
+An image of a plot of this dataset is also uploaded, which was created using Seaborn.
