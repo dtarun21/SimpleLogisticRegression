@@ -11,3 +11,14 @@ The 'IRIS-VIRGINICA' class is removed.
 
 The packages used are: Numpy,Scipy and a few modules from sklearn.
 An image of a plot of this dataset is also uploaded, which was created using Seaborn.
+
+Features:
+
+Number of data : 94
+Sepal length
+Sepal width
+Petal length
+Petal width
+
+References
+Source: https://archive.ics.uci.edu/ml/datasets/Iris
